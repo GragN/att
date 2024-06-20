@@ -1,0 +1,93 @@
+@startuml
+
+database "Database" {
+  frame "data" {
+    [Models]
+  }
+  portout DB1
+  portin DB2
+}
+
+frame "Darabase controller" {
+  [Controller]
+  portin DC1
+  portout DC2
+  portin DC3
+  portout DC4
+}
+
+
+frame "GUI" {
+  [FunctionalWindow]
+  [DataWindow]
+  [DescriptionWindow]
+  [AdditionalWindow]
+  [ChartWindow]
+  [ThreeWindow]
+  portin G1
+  portout G2
+}
+
+frame "library block" {
+  frame "Three" {
+  [Three-render] as render
+  [Three-options] as options
+}
+  
+  frame "Chart" {
+  [Chart-render] as render1
+  [Chart-options] as options1
+}
+  portout LB1
+}
+
+frame "function block" {
+
+  [FB-Data]
+  [FB-Additional]
+  [FB-Description]
+  [FB-Math. models]
+  portout FB1
+}
+
+frame "main program" {
+  frame "program execution" {
+  [MP-Data]
+  [MP-Additional]
+  [MP-Description]
+  [MP-Math. models]
+  [MP-Chart]
+  [MP-Three]
+  portin PE1
+  portin PE2
+  portout PE3
+  portout PE4
+  portin PE5
+}
+  frame "web constructor" {
+  [html]
+  [css]
+  portin WC1
+  portout WC2
+}
+}
+
+options ..> render
+options1 ..> render1
+
+DB1 --> DC2
+
+PE3 --> WC1
+
+WC2 --> G1
+
+LB1 --> PE1
+FB1 --> PE1
+DC1 --> PE2
+
+PE4 --> DC3
+
+DC4 --> DB2
+G2 --> PE5
+
+@enduml

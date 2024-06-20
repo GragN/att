@@ -1,0 +1,58 @@
+.canvas_three {
+    display: inline-block;
+}
+.canvas_chart {
+    display: inline-block;
+    max-width: 1000px;
+    max-height: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 4px;
+}
+
+.img_container {
+    position: absolute;
+    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 4px;
+    position: absolute;
+    right: 250px;
+    top: 0px;
+}
+
+.functional {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img_general {
+    display: none;
+    width: 600px;
+    padding: 10px;
+}
+
+.general_functional {
+    display: block;
+    margin: 10px;
+}
+
+.list {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.textarea {
+    display: block;
+    width: 300px;
+}
+
+.select_model_data {
+    max-width: 300px;
+}

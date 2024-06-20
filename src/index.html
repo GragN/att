@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="bd-example">
+    <canvas class="canvas_three"></canvas>
+    <div class="functional">
+      Функционал
+      <select class="select_model general_functional" name="select1" id="select1">
+        <option value="Модель 1">Модель 1</option>
+        <option value="Модель 2">Модель 2</option>
+        <option value="Модель 3">Модель 3</option>
+        <option value="Модель 4">Модель 4</option>
+      </select>
+      <span class="span_input_data general_functional">Введите данные:</span>
+      <input class="input_data general_functional" type="text">
+      <button type="button" class="btn_append general_functional">Добавить</button>
+      <span class="span_model_data general_functional">Данные по модели:</span>
+      <select class="select_model_data general_functional" name="select2" id="select2">
+      </select>
+      <span class="span_selected general_functional">Выбранное:</span>
+      <button type="button" class="btn_calculate general_functional">Расчитать</button>
+      <button type="button" class="btn_delete general_functional">Удалить</button>
+      <span class="span_result general_functional">Результат:</span>
+      <span class="span_result_number general_functional"></span>
+      <button type="button" class="btn general_functional">Выполнить расчет для всех <br>значений по данной модели</button>
+    </div>
+    <div class="list">
+      Данные по умолчанию
+      <textarea class="textarea general_functional"></textarea>
+    </div>
+    <div class="img_container">
+      <img class="img_model_1 img_general" src="./image/model_1.png">
+      <img class="img_model_2 img_general" src="./image/model_2.png">
+      <img class="img_model_3 img_general" src="./image/model_3.png">
+      <img class="img_model_4 img_general" src="./image/model_4.png">
+    </div>
+    <canvas class="canvas_chart"></canvas>
+  </div>
+</body>
+</html>
